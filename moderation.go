@@ -51,6 +51,11 @@ type ResultCategories struct {
 	SexualMinors    bool `json:"sexual/minors"`
 	Violence        bool `json:"violence"`
 	ViolenceGraphic bool `json:"violence/graphic"`
+	Harassment      bool `json:"harassment"`
+	SelfHarmIntent        bool `json:"self-harm/intent"`
+	SelfHarmInstructions  bool `json:"self-harm/instructions"`
+	HarassmentThreatening bool `json:"harassment/threatening"`
+	
 }
 
 // ResultCategoryScores represents CategoryScores of Result.
@@ -62,6 +67,10 @@ type ResultCategoryScores struct {
 	SexualMinors    float32 `json:"sexual/minors"`
 	Violence        float32 `json:"violence"`
 	ViolenceGraphic float32 `json:"violence/graphic"`
+	Harassment      float32 `json:"harassment"`
+	SelfHarmIntent        float32 `json:"self-harm/intent"`
+	SelfHarmInstructions  float32 `json:"self-harm/instructions"`
+	HarassmentThreatening float32 `json:"harassment/threatening"`
 }
 
 // ModerationResponse represents a response structure for moderation API.
